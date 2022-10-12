@@ -23,8 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5@0q0p8$k%ch#@6y@_!(zs76noysa^c+zm)gu-4ahxrj&49^g&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# vamos a ejecutar esto en modo desarrollo
+# cuando pasamos en produccion aca tiene q estar false
 DEBUG = True
 
+# q dominios habilitados para correr esta aplicacion
 ALLOWED_HOSTS = []
 
 
@@ -37,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cac'
 ]
 
 MIDDLEWARE = [
